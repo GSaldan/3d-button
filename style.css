@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* CSS RESET */
+* {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font: 1.5rem "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 55, 68);
+}
+
+/* BUTTON STYLE */
+button {
+    border: none;
+    background: red;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 200px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+/* 3D ILLUSION BACKDROP */
+.under {
+    border: none;
+    background: rgb(133, 0, 0);
+    width: 200px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    translate: 0px 10px;
+    z-index: 0;
+}
+
+.pushed:hover {
+    translate: 0px -2px;
+}
+
+.pushed:active {
+    translate: 0px 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.397);
+}
